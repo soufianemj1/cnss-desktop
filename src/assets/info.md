@@ -1,1 +1,0 @@
-assets folder mostly consist of images(.png,.svg..) and any other static files that might be needed.

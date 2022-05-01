@@ -1,1 +1,0 @@
-constants as the name suggest consist of constants used across project

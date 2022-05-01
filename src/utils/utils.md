@@ -1,1 +1,0 @@
-Store common utility functions inside this folder.
