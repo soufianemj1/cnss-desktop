@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Firstpage from "./components/firstpage";
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
 import Login from "./components/login";
-import Dashboard  from "./components/Dashboard";
+import Dashboard from "./components/Dashboard";
 function App() {
   console.log(window.ipcRenderer);
   return (
