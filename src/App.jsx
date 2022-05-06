@@ -6,7 +6,7 @@ import Dashboard from "./components/Dashboard";
 function App() {
   console.log(window.ipcRenderer);
   return (
-    <div className="h-screen w-screen bg-white flex justify-center items-center flex-col gap-[5em] font-poppins">
+    <div className="h-screen w-screen bg-blue-200 flex justify-center items-center flex-col gap-[5em] font-poppins">
       <Router>
         <Routes>
           <Route path="/" element={<Firstpage />} />

@@ -33,6 +33,10 @@ const Dashboard = () => {
         console.log(res);
         setInsered(true);
       });
+      setDate("");
+      setRepayement("");
+      setPatientId(0);
+
   };
   console.log(insered);
 
@@ -60,7 +64,7 @@ const Dashboard = () => {
       </div>
     </div>
       }
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col text-white justify-center items-center">
         <select
           onChange={(e) => setPatientId(e.target.value)}
           defaultValue={"DEFAULT"}
@@ -83,17 +87,19 @@ const Dashboard = () => {
           type="text"
           placeholder="Le montant du medicament."
           className="input mt-4 input-bordered w-full max-w-xs"
+          value={repayement}
         />
         <div>
           <input
             onChange={(e) => setDate(e.target.value)}
             type="date"
             placeholder="Type here"
-            className="input input-bordered mt-4 w-full max-w-xs"
+            className="input input-bordered mt-4 w-full px-12 max-w-xs"
+            value={date}
           />
         </div>
         <div>
-          <button className="btn mt-4" onClick={AddRepayement}>
+          <button className="btn mt-4 bg-blue-800 text-white" onClick={AddRepayement}>
             Enregistrer
           </button>
         </div>
